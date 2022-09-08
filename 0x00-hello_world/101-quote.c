@@ -7,17 +7,10 @@
 */
 int main(void)
 {
-	int s = strlen("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
-<<<<<<< HEAD
+	 int s = strlen("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
 
-	write(2,
-		 "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",
-	 	 s);
-=======
-	
-	write(2,
-		 "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",
-		 s);
->>>>>>> 0e6365ec735565303f28e5dc2300eff350a64055
-	return (1);
+	 write(2,
+			        "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",
+				       s);
+	  return (1);
 }
