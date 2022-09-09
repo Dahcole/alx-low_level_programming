@@ -7,18 +7,22 @@
  */
 int main(void)
 {
-	int num1, num2;
+	int c, i;
 
-	for (num1 = 48; num1 <= 56; num1++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		for (num2 = num1 + 1; num2 <= 57; num2++)
+		for (i = '0'; i <= '9'; i++)
 		{
-			putchar((char)num1);
-			putchar((char)num2);
-			if (num1 != 56)
+			if (c < i)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(c);
+				putchar(i);
+
+				if (c != '8' || (c == '8' && i != '9'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
