@@ -2,7 +2,8 @@
 
 /**
  * main - Entry point
- * Description: print the sum of all natural numbers below 1024 which are multiples of 3 or 5
+ * Description: print the sum of all natural numbers
+ * below 1024 which are multiples of 3 or 5
  *
  * Return: 0 (success)
  */
