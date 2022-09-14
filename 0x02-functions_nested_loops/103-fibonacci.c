@@ -22,6 +22,6 @@ int main(void)
 		if (curr % 2 == 0)
 			evensum += curr;
 	}
-	printf("%ld\n", evensum += curr;
+	printf("%ld\n", evensum);
 	return (0);
 }
