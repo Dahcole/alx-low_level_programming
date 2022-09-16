@@ -5,7 +5,6 @@
  * @n: number of _ to be printed
  * Return: void
  */
-
 void print_square(int size)
 {
 	int i, j;
