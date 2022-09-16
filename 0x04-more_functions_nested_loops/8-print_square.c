@@ -1,4 +1,4 @@
-#include "main.h"v
+#include "main.h"
 
 /**
  * print_square - check for a digit
