@@ -1,6 +1,7 @@
 #include "main.h"
 
-/** swap_int - swap to integers
+/**
+ * swap_int - swap to integers
  * @a: pointer to first integer
  * @b: pointer to second integer
  */
