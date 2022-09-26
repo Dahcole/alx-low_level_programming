@@ -10,20 +10,15 @@
 
 void print_chessboard(char (*a)[8])
 {
-	int i, j;
+	int i, j, size;
 
-	i = 0;
-	j = 0;
-	while (i < 64)
+	size = 8;
+	for (i = 0; i < size; ++i)
 	{
-		if (i % 8 == 0 && i != 0)
+		for (j = 0; j < size; ++j)
 		{
-			j = i;
-			_putchar('\n');
+			printf("%c", a[i][j]);
 		}
-
-		_putchar(a[i / 8][i - j]);
-		i++;
+		printf("\n");
 	}
-	_putchar('\n');
 }
