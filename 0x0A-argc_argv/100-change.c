@@ -42,7 +42,7 @@ int main(int argc, char **argv)
 			coins += amount / 2;
 			amount = amount % 2;
 		}
-		if (amount % 1 >= 0
+		if (amount % 1 >= 0)
 			coins += amount;
 		printf("%d\n", coins);
 		return (0);
