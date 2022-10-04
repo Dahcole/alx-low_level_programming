@@ -6,6 +6,8 @@
  *
  * @size: size of the array
  * @ch: character to initialize the array
+ * @c:
+ * any comment
  *
  * Return: NULL if size is 0 or fails to allocate memory,
  *	otherwise pointer to the array
