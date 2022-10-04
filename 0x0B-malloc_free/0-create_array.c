@@ -5,38 +5,20 @@
  * create_array - create an array an intialize it with a specified character
  *
  * @size: size of the array
- * @ch: character to initialize the array
- * @c:
- * any comment
- *
- * Return: NULL if size is 0 or fails to allocate memory,
- *	otherwise pointer to the array
+ * @c: character to initialize the array
+ * Return: NULL if size is 0 or fails to allocate memory
  */
 char *create_array(unsigned int size, char c)
 {
-	char *buffer;
-	unsigned int position;
+	char *array;
+	unsigned int i;
 
-	if (size == 0)
-	{
-	return (NULL);
-	}
-	buffer = (char *) malloc(size * sizeof(c));
-
-	if (buffer == 0)
-	{
-	return (NULL);
-	}
-
-	else
-	{
-	position = 0;
-	while (position < size)
-	{
-	*(buffer + position) = c;
-	position++;
-	}
-	}
-
-	return (buffer);
+	if (size < 1)
+		return (NULL);
+	array = malloc(size * sizeof(char));
+	if (array == NULL)
+		return (NULL);
+	for (i = 0; i < size; ++i)
+		*(array + i) = c;
+	return (array);
 }
